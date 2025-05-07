@@ -23,7 +23,7 @@ export function MainNav() {
             />
             <span className="text-xl font-bold">Nexus TMA</span>
           </Link>
-          <nav className="flex items-center space-x-6">
+          <nav className="items-center space-x-6 hidden md:flex">
             <Link
               href="/"
               className="text-sm font-medium hover:text-neutral-700 dark:hover:text-neutral-200"
