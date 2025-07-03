@@ -19,9 +19,47 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Nexus TMA - Automatización Inteligente",
+  metadataBase: new URL("https://www.nexustma.com"),
+  title: {
+    default: "Nexus TMA - Automatización Inteligente",
+    template: "%s | Nexus TMA",
+  },
   description:
     "Soluciones de automatización impulsadas por IA para transformar su negocio",
+  keywords:
+    "automatización, IA, inteligencia artificial, transformación digital, soluciones empresariales, automatización de procesos, IA para negocios, automatización empresarial, IA en negocios, automatización de operaciones, IA para empresas, automatización de operaciones empresariales, IA para empresas, automatización de operaciones empresariales, IA para empresas",
+  authors: [{ name: "Nexus TMA" }],
+  creator: "Nexus TMA",
+  publisher: "Nexus TMA",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Nexus TMA - Automatización Inteligente",
+    description:
+      "Soluciones de automatización impulsadas por IA para transformar su negocio",
+    url: "https://www.nexustma.com",
+    siteName: "Nexus TMA",
+    locale: "es_DO",
+    type: "website",
+    images: ["/favicon.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nexus TMA - Automatización Inteligente",
+    description:
+      "Soluciones de automatización impulsadas por IA para transformar su negocio",
+    images: ["/favicon.png"],
+  },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
