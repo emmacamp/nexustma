@@ -11,7 +11,7 @@ export default function Chatwoot() {
     script.defer = true;
 
     script.onload = () => {
-      // @ts-ignore
+      // @ts-expect-error @typescript-eslint/ban-ts-comment
       window.chatwootSDK.run({
         websiteToken: process.env.NEXT_PUBLIC_EMBEBED_CHAT_TOKEN,
         baseUrl: BASE_URL,
