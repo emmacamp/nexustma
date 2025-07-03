@@ -13,7 +13,7 @@ export function MainNav() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center ">
             <Image
-              src="/logo1.png"
+              src="/logo.png"
               width={54}
               height={54}
               alt="Logo"

@@ -48,14 +48,14 @@ export const metadata: Metadata = {
     siteName: "Nexus TMA",
     locale: "es_DO",
     type: "website",
-    images: ["/favicon.png"],
+    images: ["/favicon.ico"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Nexus TMA - Automatización Inteligente",
     description:
       "Soluciones de automatización impulsadas por IA para transformar su negocio",
-    images: ["/favicon.png"],
+    images: ["/favicon.ico"],
   },
   alternates: {
     canonical: "/",
@@ -70,9 +70,24 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="/favicon.png" />
-        <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body
